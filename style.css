@@ -586,9 +586,9 @@ h2, h3 {
 
 body {
     
-    /* https://grabient.com/HQBgrAzANKAsAcMT0cAjLAnDNYDsOsATDEUSKWicGWlBMHmtA3kS8AGybQC0ombI3h006TmBxMgA?style=linearSwatches&angle=270&steps=34 */
+    /* https://grabient.com/HQBgrAzANKAsAcMT0cAjLAnDNYDsOsATDEUSKWicGWlBMHmtA3kS8AGybQC0o8OowiI0oENFBFOQA?steps=13 */
 
-    background: linear-gradient(270deg, #0a0c10 0.000%, #0a0c10 2.941%, #0b0c11 calc(2.941% + 1px), #0b0c11 5.882%, #0c0d12 calc(5.882% + 1px), #0c0d12 8.824%, #0d0e13 calc(8.824% + 1px), #0d0e13 11.765%, #0e0f14 calc(11.765% + 1px), #0e0f14 14.706%, #0f0f14 calc(14.706% + 1px), #0f0f14 17.647%, #0f1015 calc(17.647% + 1px), #0f1015 20.588%, #101116 calc(20.588% + 1px), #101116 23.529%, #101117 calc(23.529% + 1px), #101117 26.471%, #111117 calc(26.471% + 1px), #111117 29.412%, #111218 calc(29.412% + 1px), #111218 32.353%, #111218 calc(32.353% + 1px), #111218 35.294%, #121218 calc(35.294% + 1px), #121218 38.235%, #121219 calc(38.235% + 1px), #121219 41.176%, #121219 calc(41.176% + 1px), #121219 44.118%, #121219 calc(44.118% + 1px), #121219 47.059%, #121219 calc(47.059% + 1px), #121219 50.000%, #121219 calc(50.000% + 1px), #121219 52.941%, #121219 calc(52.941% + 1px), #121219 55.882%, #111119 calc(55.882% + 1px), #111119 58.824%, #111119 calc(58.824% + 1px), #111119 61.765%, #111119 calc(61.765% + 1px), #111119 64.706%, #101019 calc(64.706% + 1px), #101019 67.647%, #101018 calc(67.647% + 1px), #101018 70.588%, #0f0f18 calc(70.588% + 1px), #0f0f18 73.529%, #0e0e18 calc(73.529% + 1px), #0e0e18 76.471%, #0e0e17 calc(76.471% + 1px), #0e0e17 79.412%, #0d0d16 calc(79.412% + 1px), #0d0d16 82.353%, #0c0c16 calc(82.353% + 1px), #0c0c16 85.294%, #0b0b15 calc(85.294% + 1px), #0b0b15 88.235%, #0a0a14 calc(88.235% + 1px), #0a0a14 91.176%, #090913 calc(91.176% + 1px), #090913 94.118%, #080813 calc(94.118% + 1px), #080813 97.059%, #070712 calc(97.059% + 1px) 100.000%);
+    background: linear-gradient(90deg, #000000 0.000%, #000000 8.333%, #000003 16.667%, #010106 25.000%, #040409 33.333%, #07070c 41.667%, #090a0f 50.000%, #0c0c11 58.333%, #0e0e14 66.667%, #101016 75.000%, #121218 83.333%, #131319 91.667%, #14141b 100.000%);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -632,6 +632,7 @@ body {
     max-width: 1120px;
     min-height: 380px;
     background: #26262626;
+    border: 1px solid rgba(255, 255, 255, 0.089);
     border-radius: 15px;
     padding: 16px;
     display: block; /* 🔥 REMOVE FLEX */
@@ -815,7 +816,7 @@ body {
     #view-work,
     #get-intouch {
         width: auto;
-        font-size: 0.86rem !important;
+        font-size: 0.84rem !important;
         padding: 12px 18px;
     }
 }
