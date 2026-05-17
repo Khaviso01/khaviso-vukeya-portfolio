@@ -624,7 +624,6 @@ body {
 
 .about-heading {
     font-size: 3rem;
-    line-height: 1;
     font-weight: 700;
     max-width: 650px;
 }
@@ -635,7 +634,7 @@ body {
     line-height: 1.8;
     max-width: 600px;
     margin-bottom: 2.2rem;
-    margin-top: 2.5rem;
+    margin-top: 0.3rem;
 }
 
 /* PROFILE CARD */
