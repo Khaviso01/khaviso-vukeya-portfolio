@@ -767,7 +767,7 @@ body {
     font-size: 1.15rem;
     line-height: 1.9;
     color: #b0b0b0;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .about-right span {
@@ -940,7 +940,7 @@ body {
     max-width: 1000px;
     margin: 80px auto;
     padding: 40px;
-    background: #1e293b;
+    background: #1e293b68;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
@@ -963,7 +963,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    background: #243447;
+    background: #2434476d;
     padding: 40px 20px;
     border-radius: 18px;
     text-align: center;
@@ -1197,9 +1197,8 @@ html {
 
 .project-content h3 {
     color: white;
-    font-size: 1.7rem;
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    font-size: 1.3rem;
+    line-height: 0.9;
 }
 
 .project-content p {
@@ -1255,22 +1254,20 @@ html {
     border-color: #4f7df3;
 }
 
-.featured-project {
-    border: 1px solid rgba(79, 125, 243, 0.35);
-}
 
 .featured-badge {
     position: absolute;
     top: 1.2rem;
     right: 1.2rem;
     z-index: 5;
-    background: #4f7df3;
+    background: #45454554;
     color: white;
     padding: 0.55rem 1rem;
     border-radius: 50px;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 1px;
+    font-family: "JetBrains Mono", monospace;
 }
 
 @media(max-width:768px) {
@@ -1507,19 +1504,16 @@ html {
 .cert-grid {
     display: grid;
     grid-template-columns: repeat(2, 420px);
-    /* fixed width cards */
     justify-content: center;
-    /* centers the grid */
     gap: 24px;
     margin-top: 50px;
 }
 
 .cert-card {
     position: relative;
-    background: linear-gradient(145deg, #0f1f3d94, #0a162b40);
+    background: linear-gradient(145deg, #0f1f3d43, #0a162b28);
     border-radius: 18px;
     padding: 22px;
-    /* smaller padding */
     text-align: left;
     border: 1px solid rgba(93, 169, 255, 0.15);
     box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
