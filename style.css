@@ -276,7 +276,7 @@ header {
     font-weight: 500;
     letter-spacing: 0.2px;
     white-space: nowrap;
-    /* keeps text aligned cleanly */
+    font-family: "JetBrains Mono", monospace;
     transition: all 0.25s ease;
 }
 
@@ -478,7 +478,7 @@ a {
 
 p {
     color: #fcfbfb;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
     padding: 1px;
     align-items: flex-start;
@@ -619,6 +619,7 @@ body {
     font-weight: 600;
     display: inline-block;
     margin-bottom: 1.2rem;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .about-heading {
@@ -634,7 +635,7 @@ body {
     line-height: 1.8;
     max-width: 600px;
     margin-bottom: 5rem;
-    margin-top: 1rem;
+    margin-top: 2.5rem;
 }
 
 /* PROFILE CARD */
@@ -672,13 +673,14 @@ body {
 
 
 .profile-card h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 0.3rem;
 }
 
 .role {
     color: #9f9f9f;
     margin-bottom: 2rem;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .profile-info {
@@ -691,7 +693,15 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
-    color: #9f9f9f;
+    color: #f9f9f9;
+    font-family: "JetBrains Mono", monospace;
+    
+}
+
+.info-row span{
+    
+    font-family: "JetBrains Mono", monospace;
+    
 }
 
 .info-row:last-child {
@@ -700,6 +710,7 @@ body {
 
 .open {
     color: #5d8cff;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .hire-btn {
@@ -714,8 +725,9 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 14px;
-    font-weight: 600;
+    font-weight: 500;
     transition: 0.3s;
+    font-size:0.9rem;
 }
 
 .data-btn {
@@ -730,8 +742,9 @@ body {
     color: white;
     text-decoration: none;
     border-radius: 14px;
-    font-weight: 600;
+    font-weight: 500;
     transition: 0.3s;
+    font-size:0.9rem;
 }
 
 .hire-btn:hover {
@@ -1172,7 +1185,8 @@ html {
     color: #5d8cff;
     font-size: 0.85rem;
     letter-spacing: 2px;
-    font-weight: 700;
+    font-weight: 500;
+    font-family: "JetBrains Mono", monospace;
 }
 
 .project-category {
@@ -1424,7 +1438,7 @@ html {
 
     .timeline-item {
         width: 100%;
-        padding-left: 40px;
+        padding-left: 20px;
         padding-right: 25px;
     }
 
