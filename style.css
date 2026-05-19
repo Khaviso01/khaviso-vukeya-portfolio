@@ -117,7 +117,6 @@ img {
 #logo {
     height: 60px;
     align-content: center;
-    padding: 8px;
     font-size: 21px;
 }
 
@@ -343,7 +342,6 @@ header {
     margin: 0 auto;
     border-radius: 50%;
     animation: glow 2s infinite alternate;
-    border-radius: 400px;
     box-shadow: #4d94ff 0px 4px 30px;
     border: 2px solid #4d94ff;
     transition: box-shadow 0.3s ease;
@@ -534,6 +532,7 @@ h3 {
     font-family: 'Space Grotesk', sans-serif;
     color: #ffffff;
     margin-bottom: 10px;
+    margin-top: 1rem
 }
 
 @media screen and (max-width: 728px) {
@@ -615,7 +614,6 @@ body {
 
 .about-small-title {
     color: #5d8cff;
-    font-size: 0.8rem;
     letter-spacing: 3px;
     font-weight: 600;
     display: inline-block;
@@ -632,10 +630,10 @@ body {
 .about-intro {
     color: #9f9f9f;
     font-size: 1.15rem;
-    line-height: 1.8;
+    line-height: 1.9;
     max-width: 600px;
-    margin-bottom: 2.2rem;
-    margin-top: 0.3rem;
+    margin-bottom: 3.9rem;
+    margin-top: 2.2rem;
 }
 
 /* PROFILE CARD */
@@ -674,7 +672,7 @@ body {
 
 .profile-card h2 {
     font-size: 1.8rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 1.3rem;
 }
 
 .role {
@@ -722,7 +720,7 @@ body {
     align-items: center;
     gap: 0.8rem;
     padding: 1rem;
-    background: linear-gradient(135deg, #6c47ff96, #7a59ff);
+    background: #2563eb;
     color: white;
     text-decoration: none;
     border-radius: 14px;
@@ -768,7 +766,7 @@ body {
     font-size: 1.15rem;
     line-height: 1.9;
     color: #b0b0b0;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .about-right span {
@@ -794,14 +792,12 @@ body {
 }
 
 .about-box:hover {
-    transform: translateY(-5px);
     border-color: #4f7df3;
 }
 
 .about-box i {
     font-size: 1.7rem;
     color: #5d8cff;
-    margin-bottom: 1rem;
 }
 
 .about-box h3 {
@@ -1086,8 +1082,12 @@ section,
 .contact-card,
 footer {
     opacity: 0;
-    transform: translateY(99px);
-    transition: all 0.8s ease;
+    transform: translateY(40px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+
+    will-change: transform, opacity;
 }
 
 
@@ -1143,13 +1143,12 @@ html {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 28px;
     overflow: hidden;
-    transition: 0.35s ease;
+    transition: 0.10s ease;
     position: relative;
 }
 
 .project-card:hover {
-    transform: translateY(-6px);
-    border-color: #4f7df3;
+    border-color: #4f7df35a;
 }
 
 .project-image-wrapper {
@@ -1328,7 +1327,7 @@ html {
 /* TIMELINE ITEMS */
 .timeline-item {
     display: block;
-    padding: 17px 37px;
+    padding: 30px 37px;
     position: relative;
     width: 50%;
 }
@@ -1392,7 +1391,6 @@ html {
     padding: 25px 30px;
     border-radius: 14px;
     text-align: left;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(59, 131, 246, 0.108);
 }
 
@@ -1429,7 +1427,8 @@ html {
 .content ul li {
     margin-bottom: 8px;
     font-size: 0.95rem;
-    color: #cbd5e1;
+    color: #a8a8a8;
+    line-height: 1.15;
 }
 
 /* RESPONSIVE */
@@ -1518,13 +1517,10 @@ html {
     padding: 22px;
     text-align: left;
     border: 1px solid rgba(93, 169, 255, 0.15);
-    box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
-    transition: 0.3s;
 }
 
 .cert-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 22px rgba(93, 169, 255, 0.2);
+    color: #3b82f6;
 }
 
 .verified {
