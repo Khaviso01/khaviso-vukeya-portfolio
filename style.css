@@ -1013,22 +1013,6 @@ body {
 }
 
 
-.read {
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #ffffff60;
-    font-family: 'Space Grotesk', sans-serif;
-    color: rgba(255, 255, 255, 0.641);
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s ease;
-}
-
-.read:hover {
-    background: #1a1a1a5e;
-    color: #f8f8f8;
-}
-
 
 
 * {
@@ -1143,7 +1127,6 @@ html {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 28px;
     overflow: hidden;
-    transition: 0.10s ease;
     position: relative;
 }
 
@@ -1198,7 +1181,7 @@ html {
 
 .project-content h3 {
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 0.9;
 }
 
@@ -1282,7 +1265,7 @@ html {
     }
 
     .project-content h3 {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
 }
@@ -1388,7 +1371,7 @@ html {
 /* CARD */
 .content {
     background: #11111181;
-    padding: 25px 30px;
+    padding: 19px 22px;
     border-radius: 14px;
     text-align: left;
     border: 1px solid rgba(59, 131, 246, 0.108);
@@ -1400,7 +1383,7 @@ html {
     background: #1e293b57;
     color: #3b82f6;
     padding: 6px 14px;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     border-radius: 20px;
     margin-bottom: 15px;
     font-family: "JetBrains Mono", monospace;
@@ -1428,7 +1411,7 @@ html {
     margin-bottom: 8px;
     font-size: 0.95rem;
     color: #a8a8a8;
-    line-height: 1.15;
+    line-height: 1.45;
 }
 
 /* RESPONSIVE */
