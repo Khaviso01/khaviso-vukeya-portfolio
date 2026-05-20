@@ -845,7 +845,7 @@ body {
         font-size: 2.3rem;
     }
 
-    .about-right p {
+    .about-right p, .about-intro {
         font-size: 1.05rem;
     }
 
