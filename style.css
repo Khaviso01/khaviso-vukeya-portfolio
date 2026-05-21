@@ -1069,6 +1069,7 @@ section,
 .profile-card,
 .timeline-item,
 .contact-card,
+.contact-form
 footer {
     opacity: 0;
     transform: translateY(40px);
