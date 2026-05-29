@@ -46,12 +46,10 @@
 
 <body>
 
-
-    <div id="progress-bar"></div>
     <header id="header">
         <div class="header-inner">
             <h1 id="logo"><span id="at"
-                    style="font-family: 'space grotesk', inter;border-radius: 7px; background: #3164ff3d; color: #ffffff; padding: 5px 10px; font-size: 1rem;">KV</span>
+                    style="font-family: 'space grotesk', inter;border-radius: 7px; background: #3164ff29; color: #ffffff; padding: 5px 10px; font-size: 1rem;">KV</span>
             </h1>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -78,11 +76,8 @@
                 Turning<span class="intro"> data, design, and technology</span> into meaningful solutions.
             </h1>
 
-            <p class="subtitle" style="text-align: left; margin-bottom: 0.5rem;">
-                Hi!, I'm <span style="color:aliceblue; font-weight: 550; font-family: 'Inter', sans-serif;">Khaviso
-                    Vukeya</span> — a problem solver, data enthusiast, tech support, and a web developer. I love turning
-                raw data into
-                decisions, crafting clean dynamic websites, dashboards, and turning ideas into reality.
+            <p class="subtitle" style="margin-bottom: 1rem; margin-top: 1rem;">
+                I'm Khaviso Vukeya — I love turning raw data into decisions, crafting clean UI/UX dynamic websites, BI dashboards, and turning ideas into reality.
             </p>
 
             <div class="pill-stack">
@@ -156,7 +151,7 @@
 
                     </div>
 
-                    <a href="documents/Khaviso Vukeya-CV.pdf" target="_blank" class="hire-btn">
+                    <a href="documents/Khaviso_Vukeya_CV.pdf" target="_blank" class="hire-btn">
                         <i class="fa-solid fa-download"></i>
                         Download Resumé
                     </a>
@@ -849,13 +844,13 @@
                 <div class="brand-row">
 
                     <h1 id="logo"><span id="at"
-                            style="font-family: 'space grotesk', inter;border-radius: 7px; background: #3164ff3d; color: #ffffff; padding: 5px 10px; font-size: 1rem;">KV</span>
+                            style="font-family: 'space grotesk', inter;border-radius: 7px; background: #3164ff29; color: #ffffff; padding: 5px 10px; font-size: 1rem;">KV</span>
                     </h1>
 
 
                 </div>
 
-                <p class="subtitle" style="text-align: left;">
+                <p class="subtitle" style="text-align: left !important;">
                     Data Analyst and Frontend developer building clean,
                     responsive, and user-focused digital experiences.
                     Currently open to junior opportunities and collaborations.
@@ -900,7 +895,7 @@
             <!-- RIGHT -->
             <div class="footer-column" style="text-align: left;">
 
-                <h3>Direct</h3>
+                <h3>Direct Contact</h3>
 
                 <a href="mailto:khavisovukeya3@gmail.com">
                     khavisovukeya3@gmail.com
@@ -946,7 +941,6 @@
             });
 
             // Reveal animation
-            // Reveal animation
             const elements = document.querySelectorAll(`section, .about-box, .project-card, .cert-card, .profile-card, .timeline-item, .contact-card, footer`);
 
             const observer = new IntersectionObserver((entries) => {
@@ -960,13 +954,6 @@
             });
 
             elements.forEach(el => observer.observe(el));
-        });
-
-        window.addEventListener("scroll", () => {
-            const scrollTop = window.scrollY;
-            const docHeight = document.body.scrollHeight - window.innerHeight;
-            const progress = (scrollTop / docHeight) * 100;
-            document.getElementById("progress-bar").style.width = progress + "%";
         });
 
         const cards = document.querySelectorAll(

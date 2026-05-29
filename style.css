@@ -1,6 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+body {
+
+    /* https://grabient.com/HQBgrAzANKAsAcMT0cAjLAnDNYDsOsATDEUSKWicGWlBMHmtA3kS8AGybQC0o8OowiI0oENFBFOQA?steps=13 */
+
+    background: linear-gradient(90deg, #000000 0.000%, #000000 8.333%, #000003 16.667%, #010106 25.000%, #040409 33.333%, #07070c 41.667%, #090a0f 50.000%, #0c0c11 58.333%, #0e0e14 66.667%, #101016 75.000%, #121218 83.333%, #131319 91.667%, #14141b 100.000%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+    overflow-x: hidden;
+    scroll-padding-top: 80px;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -233,28 +255,55 @@ header {
     align-items: center;
 }
 
+.my-name {
+    font-size: 3.2rem;
+    background: linear-gradient(90deg, #4d94ff, #a0a1ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 /* MOBILE + TABLET */
 @media (max-width: 900px) {
 
     #home {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         padding-top: 7rem;
         gap: 2rem;
+    }
+
+    #home>div:first-child {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
     }
 
 
     /* IMAGE BELOW BUTTONS */
     #home>div:last-child {
         order: 2;
+        justify-content: center;
+        display: flex;
         width: 100%;
     }
 
+    .my-name,
+    .subtitle,
+    .home-buttons {
+        text-align: center !important;
+    }
+
     .pill-stack {
-        justify-content: flex-start;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .home-buttons {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
 
@@ -264,6 +313,7 @@ header {
 .pill-stack {
     display: inline-flex;
     align-items: center;
+    margin: 0 auto 10px auto;
     margin-bottom: 13px;
     justify-content: flex-start;
     gap: 8px;
@@ -308,6 +358,62 @@ header {
     opacity: 0.9;
 }
 
+#view-work,
+#get-intouch {
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 550;
+    font-size: 0.8rem !important;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: 0.3s ease;
+}
+
+
+
+#view-work {
+    gap: 8px;
+    display: inline-flex;
+    background: #2a6cfb;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+#get-intouch {
+    gap: 8px;
+    display: inline-flex;
+    background: #a18cff1f;
+    border: 1px solid #7b7b7b;
+    color: #ffffff;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#view-work:hover {
+    background: #000000;
+}
+
+#get-intouch:hover {
+    background: #000000;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+
+
+    #view-work,
+    #get-intouch {
+        width: auto;
+        font-size: 0.84rem !important;
+        padding: 12px 18px;
+    }
+}
+
 
 .icon-wrapper {
     width: 70px;
@@ -319,47 +425,19 @@ header {
     border-radius: 12px;
 }
 
-.icon-wrapper svg {
-    width: 40px;
-    height: 40px;
-}
-
-.my-name {
-    font-size: 3.2rem;
-    background: linear-gradient(90deg, #4d94ff, #a0a1ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
 
 #khaviso {
     width: 100%;
-    max-width: 370px;
+    max-width: 420px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
     margin: 0 auto;
-    border-radius: 50%;
+    border-radius: 25px;
     animation: glow 2s infinite alternate;
-    box-shadow: #4d94ff 0px 4px 30px;
-    border: 2px solid #4d94ff;
+    border: 1px solid #f1f1f1;
     transition: box-shadow 0.3s ease;
 
-}
-
-@keyframes glow {
-    0% {
-        box-shadow: 0 0 10px #4d94ff;
-    }
-
-    50% {
-        box-shadow: 0 0 30px #4d94ff;
-    }
-
-    100% {
-        box-shadow: 0 0 10px #4d94ff;
-    }
 }
 
 
@@ -384,11 +462,12 @@ header {
 
 @media (max-width: 480px) {
     .my-name {
-        font-size: 42px;
+        font-size: 31px;
     }
 
     #khaviso {
-        width: 50%
+        margin-top: 2rem;
+        width: 74%
     }
 
     #home {
@@ -453,16 +532,6 @@ label {
     display: block;
 }
 
-textarea {
-    width: 40%;
-    padding: 10px;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 10px;
-    align-items: center;
-}
 
 a {
     text-decoration: none;
@@ -540,13 +609,13 @@ h3 {
         font-size: 2.5rem;
     }
 
-    
+
     h3 {
         font-size: 1rem;
     }
 
     .content h3 {
-        font-size:1rem;
+        font-size: 1rem;
     }
 
 
@@ -562,35 +631,12 @@ h3 {
     border-radius: 10px;
 }
 
-body {
-
-    /* https://grabient.com/HQBgrAzANKAsAcMT0cAjLAnDNYDsOsATDEUSKWicGWlBMHmtA3kS8AGybQC0o8OowiI0oENFBFOQA?steps=13 */
-
-    background: linear-gradient(90deg, #000000 0.000%, #000000 8.333%, #000003 16.667%, #010106 25.000%, #040409 33.333%, #07070c 41.667%, #090a0f 50.000%, #0c0c11 58.333%, #0e0e14 66.667%, #101016 75.000%, #121218 83.333%, #131319 91.667%, #14141b 100.000%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    padding-top: 30px;
-    text-align: center;
-    overflow-x: hidden;
-    scroll-padding-top: 80px;
-}
-
-
-
 
 .card:hover {
     transform: translateY(-5px);
     border-color: rgb(43, 88, 139);
 }
 
-
-.card-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
 
 .about-section {
     width: 100%;
@@ -841,11 +887,13 @@ body {
         padding: 5rem 6%;
     }
 
-    .about-heading {
-        font-size: 2.3rem;
+    .about-heading,
+    .profile-card h2 {
+        font-size: 31px;
     }
 
-    .about-right p, .about-intro {
+    .about-right p,
+    .about-intro {
         font-size: 1.05rem;
     }
 
@@ -868,65 +916,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-}
-
-
-/* Button styling */
-
-#view-work,
-#get-intouch {
-    display: inline-flex;
-    align-items: center;
-    margin: 10px;
-    padding: 12px 20px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 550;
-    font-size: 0.8rem !important;
-    white-space: nowrap;
-    flex-shrink: 0;
-    transition: 0.3s ease;
-}
-
-
-
-#view-work {
-    gap: 8px;
-    display: inline-flex;
-    background: #2a6cfb;
-    color: white;
-    font-family: 'Space Grotesk', sans-serif;
-
-}
-
-#get-intouch {
-    gap: 8px;
-    display: inline-flex;
-    background: #a18cff1f;
-    border: 1px solid #7b7b7b;
-    color: #ffffff;
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-#view-work:hover {
-    background: #000000;
-}
-
-#get-intouch:hover {
-    background: #000000;
-    color: white;
-}
-
-
-@media (max-width: 768px) {
-
-
-    #view-work,
-    #get-intouch {
-        width: auto;
-        font-size: 0.84rem !important;
-        padding: 12px 18px;
-    }
 }
 
 .card-heading {
@@ -1018,15 +1007,6 @@ body {
 }
 
 
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
 .skills-section {
     padding: 6rem 6%;
 
@@ -1069,8 +1049,7 @@ section,
 .profile-card,
 .timeline-item,
 .contact-card,
-.contact-form
-footer {
+.contact-form footer {
     opacity: 0;
     transform: translateY(40px);
     transition:
@@ -1089,17 +1068,6 @@ footer {
 
 html {
     scroll-behavior: smooth;
-}
-
-
-#progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 3px;
-    width: 0%;
-    background: linear-gradient(90deg, #4d94ff, #8a2be2);
-    z-index: 9999;
 }
 
 
@@ -1837,7 +1805,6 @@ button:hover {
     padding: 0;
 }
 
-/* STATUS */
 .availability {
     display: flex;
     align-items: center;
@@ -1854,9 +1821,6 @@ button:hover {
     border-radius: 50%;
 }
 
-/* =========================
-   TABLET
-========================= */
 
 @media (max-width: 1000px) {
 
@@ -1867,9 +1831,6 @@ button:hover {
 
 }
 
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 768px) {
 
