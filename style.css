@@ -17,7 +17,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 40px;
     text-align: center;
     overflow-x: hidden;
     scroll-padding-top: 80px;
@@ -104,16 +104,14 @@ img {
         right: -100%;
         width: 75%;
         height: 100vh;
-
         background: rgba(15, 27, 46, 0.98);
         backdrop-filter: blur(18px);
-
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         gap: 35px;
-
+        padding-left: 30px;
         transition: right 0.4s ease;
         z-index: 1100;
     }
@@ -123,8 +121,9 @@ img {
     }
 
     #nav-bar a {
+        text-align: left;
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 550;
         letter-spacing: 1px;
         transition: 0.3s ease;
     }
@@ -207,7 +206,7 @@ header {
 .intro {
     -webkit-text-fill-color: white;
     background: none;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
 }
 
 
@@ -256,7 +255,7 @@ header {
 }
 
 .my-name {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     background: linear-gradient(90deg, #4d94ff, #a0a1ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -362,12 +361,13 @@ header {
 #get-intouch {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     margin: 10px;
     padding: 12px 20px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: 550;
-    font-size: 0.8rem !important;
+    font-size: 1rem !important;
     white-space: nowrap;
     flex-shrink: 0;
     transition: 0.3s ease;
@@ -380,18 +380,18 @@ header {
     display: inline-flex;
     background: #2a6cfb;
     color: white;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
 #get-intouch {
-    gap: 8px;
+    gap: 10px;
     display: inline-flex;
-    background: #a18cff1f;
     border: 1px solid #7b7b7b;
     color: #ffffff;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 
 #view-work:hover {
     background: #000000;
@@ -408,9 +408,12 @@ header {
 
     #view-work,
     #get-intouch {
+        display: inline-flex;
         width: auto;
-        font-size: 0.84rem !important;
-        padding: 12px 18px;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem !important;
+        padding: 12px 99px;
     }
 }
 
@@ -536,8 +539,8 @@ label {
 a {
     text-decoration: none;
     color: #fcfbfb;
-    font-weight: 500;
-    font-family: 'Space grotesk';
+    font-weight: 550;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #at {
@@ -588,7 +591,7 @@ li {
 
 h1 {
     font-size: 3rem;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
     color: #4d94ff;
     text-align: center;
 }
@@ -598,7 +601,7 @@ h1 {
 
 h3 {
     font-size: 1.2rem;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: sys Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
     color: #ffffff;
     margin-bottom: 10px;
     margin-top: 1rem
@@ -775,9 +778,9 @@ h3 {
     color: white;
     text-decoration: none;
     border-radius: 14px;
-    font-weight: 500;
+    font-weight: 550;
     transition: 0.3s;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .data-btn {
@@ -792,9 +795,9 @@ h3 {
     color: white;
     text-decoration: none;
     border-radius: 14px;
-    font-weight: 500;
+    font-weight: 550;
     transition: 0.3s;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .hire-btn:hover {
@@ -1205,6 +1208,7 @@ html {
     border: 1px solid rgba(255, 255, 255, 0.08);
     transition: 0.3s ease;
     font-size: 0.95rem;
+    font-weight: 550;
 }
 
 .project-links a:hover {
