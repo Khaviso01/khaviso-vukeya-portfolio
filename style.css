@@ -13,7 +13,7 @@ body {
 
     /* https://grabient.com/HQBgrAzANKAsAcMT0cAjLAnDNYDsOsATDEUSKWicGWlBMHmtA3kS8AGybQC0o8OowiI0oENFBFOQA?steps=13 */
 
-    background: linear-gradient(90deg, #000000 0.000%, #000000 8.333%, #000003 16.667%, #010106 25.000%, #040409 33.333%, #07070c 41.667%, #090a0f 50.000%, #0c0c11 58.333%, #0e0e14 66.667%, #101016 75.000%, #121218 83.333%, #131319 91.667%, #14141b 100.000%);
+    background: #0a0a0a;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -104,7 +104,7 @@ img {
         right: -100%;
         width: 75%;
         height: 100vh;
-        background: rgba(15, 27, 46, 0.98);
+        background: rgba(25, 25, 25, 0.98);
         backdrop-filter: blur(18px);
         display: flex;
         flex-direction: column;
@@ -313,7 +313,7 @@ header {
     display: inline-flex;
     align-items: center;
     margin: 0 auto 10px auto;
-    margin-bottom: 13px;
+    margin-bottom: 20px;
     justify-content: flex-start;
     gap: 8px;
     padding: 6px 17px;
@@ -345,9 +345,8 @@ header {
     color: #d4d4d8;
     font-size: 0.810rem;
     font-weight: 500;
-    letter-spacing: 0.2px;
+    letter-spacing: 5px;
     white-space: nowrap;
-    /* keeps text aligned cleanly */
     transition: all 0.25s ease;
 }
 
@@ -357,16 +356,22 @@ header {
     opacity: 0.9;
 }
 
+.home-buttons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 #view-work,
 #get-intouch {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
     padding: 12px 20px;
+    gap: 8px;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 550;
+    font-weight: 600;
     font-size: 1rem !important;
     white-space: nowrap;
     flex-shrink: 0;
@@ -387,7 +392,7 @@ header {
 #get-intouch {
     gap: 10px;
     display: inline-flex;
-    border: 1px solid #7b7b7b;
+    border: 1px solid #bbbbbb;
     color: #ffffff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -404,17 +409,16 @@ header {
 
 
 @media (max-width: 768px) {
-
-
-    #view-work,
-    #get-intouch {
-        display: inline-flex;
+    
+    .home-buttons {
+        display: flex;
         width: auto;
         align-items: center;
         justify-content: center;
         font-size: 1rem !important;
         padding: 12px 99px;
     }
+
 }
 
 
@@ -480,7 +484,7 @@ header {
 }
 
 #nav-bar a:hover {
-    color: #3b82f6;
+    color: #ffffff;
 }
 
 .nav {
@@ -491,9 +495,6 @@ header {
     gap: 20px;
 }
 
-.nav:hover {
-    color: #3b82f6;
-}
 
 #nav-bar a {
     position: relative;
@@ -506,23 +507,23 @@ header {
     left: 50%;
     bottom: -5px;
     width: 0;
-    height: 4px;
-    background: #3b82f6;
+    height: 28px;
     transition: width 0.3s ease;
     transform: translateX(-50%);
     border-radius: 999px;
 }
 
 #nav-bar a.active {
-    color: #3b82f6;
+    color: #ffffff;
 }
 
 #nav-bar a.active::after {
-    width: 60%;
+    width: 100%;
+    border: 1px solid #ffffff48;
 }
 
 #nav-bar a:hover::after {
-    width: 50%;
+    width: 90%;
 }
 
 
@@ -604,7 +605,8 @@ h3 {
     font-family: sys Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
     color: #ffffff;
     margin-bottom: 10px;
-    margin-top: 1rem
+    margin-top: 1rem;
+    font-weight: 600;
 }
 
 @media screen and (max-width: 728px) {
@@ -1164,6 +1166,7 @@ html {
 
 .project-content p {
     color: #a8a8a8;
+    font-size: 0.875rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
 }
@@ -1265,158 +1268,133 @@ html {
     border-radius: 5px;
 }
 
-/* TIMELINE */
-.timeline {
-    display: block;
+.timeline{
     position: relative;
-    max-width: 1100px;
-    margin: auto;
+    max-width: 850px;
+    margin: 3rem auto;
+    padding-left: 100px;
 }
 
-/* CENTER LINE */
-.timeline::after {
+.timeline::before{
     content: '';
     position: absolute;
-    width: 3px;
-    background: #3b82f6;
+    left: 32px;
     top: 0;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 2px;
+    background: rgba(255, 255, 255, 0.15);
 }
 
-/* TIMELINE ITEMS */
-.timeline-item {
-    display: block;
-    padding: 30px 37px;
+.timeline-item{
+    width: 100%;
     position: relative;
-    width: 50%;
+    padding: 0;
+    margin-bottom: 2rem;
 }
 
-.timeline-item.left {
+.timeline-item.left, .timeline-item.right{
     left: 0;
 }
 
-.timeline-item.right {
-    left: 50%;
-}
-
-
-
-@media screen and (max-width: 900px) {
-
-    .timeline::after {
-        left: 20px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 60px;
-        padding-right: 25px;
-    }
-
-    .timeline-item.left,
-    .timeline-item.right {
-        left: 12px;
-        text-align: left;
-    }
-
-    .timeline-item::after {
-        left: 13px;
-        right: auto;
-    }
-
-}
-
-
-/* DOTS */
-.timeline-item::after {
+.timeline-item::after{
     content: '';
     position: absolute;
-    width: 14px;
-    height: 14px;
-    right: -7px;
-    background: #3b82f6;
-    border-radius: 50%;
+    left:-78px;
     top: 30px;
-    z-index: 1;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #3b82f6;
+    z-index: 2;
 }
 
-.timeline-item.right::after {
-    left: -7px;
+.content{
+    background: #0e0e0e;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2rem;
 }
 
-/* CARD */
-.content {
-    background: #11111181;
-    padding: 19px 22px;
-    border-radius: 14px;
-    text-align: left;
-    border: 1px solid rgba(59, 131, 246, 0.108);
-}
-
-/* DATE BADGE */
-.date {
+.date{
     display: inline-block;
     background: #1e293b57;
     color: #3b82f6;
     padding: 6px 14px;
     font-size: 0.7rem;
     border-radius: 20px;
-    margin-bottom: 15px;
-    font-family: "JetBrains Mono", monospace;
 }
 
-/* TEXT */
-.content h3 {
-    margin-bottom: 8px;
+
+.content h4 {
+
+    color:#9e9e9e;
     font-weight: 600;
 }
 
-.content h4 {
-    color: #3b82f6;
-    font-weight: 500;
-    margin-bottom: 15px;
-    font-size: 0.9rem;
+.content h3 {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
 }
 
 .content ul {
-    padding-left: 18px;
+    list-style: none;
 }
 
 .content ul li {
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-    color: #a8a8a8;
-    line-height: 1.45;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
 }
 
-/* RESPONSIVE */
-@media screen and (max-width: 900px) {
-
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 25px;
-    }
-
-    .timeline-item.right {
-        left: 20px;
-    }
-
-    .timeline-item::after {
-        left: 1px;
-    }
+.content ul li i {
+    color:rgb(94, 94, 94)
 }
+
+@media (max-width: 900px) {
+
+    .timeline{
+        padding-left: 53px;
+    }
+
+    .timeline-item::after{
+        left:-58px;
+    }
+
+    .content {
+    padding: 1.1rem;
+    }
+
+    .content h3 {
+    font-size: 1rem;
+    }
+
+    .content h4{
+    font-size: 0.8rem;
+    }
+
+    .content ul li {
+    font-size: 0.8rem;
+}
+
+
+.timeline::before{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.15);
+}
+}
+
+
 
 
 .certificates {
     padding: 70px 0;
     max-width: 1000px;
-    /* controls total width */
     margin: 0 auto;
-    /* center section */
     text-align: center;
 }
 
@@ -1436,11 +1414,8 @@ html {
 .subtitle {
 
     color: #b0b0b0;
-    max-width: 1060px;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 1.15rem;
-    line-height: 1.8;
+    line-height: 1.6;
 }
 
 @media screen and (max-width: 768px) {
@@ -1510,13 +1485,11 @@ html {
 .cert-top {
     display: inline-grid;
     gap: 14px;
-    /* tighter spacing */
     align-items: center;
 }
 
 .icon-box {
     width: 60px;
-    /* size of the icon box */
     height: 60px;
     display: flex;
     align-items: center;
@@ -1529,12 +1502,10 @@ html {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    /* keeps proportions */
 }
 
 .cert-card h3 {
     font-size: 16px;
-    /* smaller title */
     margin-bottom: 3px;
 }
 
@@ -1792,12 +1763,10 @@ button:hover {
 }
 
 /* BOTTOM */
-.footer-bottom-bar {
-    margin-top: 40px;
-    padding-top: 30px;
-
+.bar {
+    margin-top: 20px;
+    padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1805,7 +1774,7 @@ button:hover {
     flex-wrap: wrap;
 }
 
-.footer-bottom-bar p {
+.bar p {
     color: #7b7b7b;
     font-size: 0.95rem;
     padding: 0;
