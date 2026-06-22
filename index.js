@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Reveal animation
+
     const elements = document.querySelectorAll(`section, .about-box, .project-card, .cert-card, .profile-card, .timeline-item, .contact-card, footer`);
 
     const observer = new IntersectionObserver((entries) => {
