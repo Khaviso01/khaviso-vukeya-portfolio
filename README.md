@@ -3,8 +3,6 @@
 Personal portfolio site for **Khaviso Vukeya** — Data Analyst & Developer.
 Built with React, TypeScript, and Vite, styled with a single global stylesheet (no CSS modules, no Tailwind).
 
-🔗 Live demo: _add your deployed URL here_
-
 ## Tech stack
 
 - **React 19** + **TypeScript**
