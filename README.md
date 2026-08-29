@@ -1,32 +1,85 @@
-# React + TypeScript + Vite
+# Khaviso Vukeya — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio site for **Khaviso Vukeya** — Data Analyst & Developer.
+Built with React, TypeScript, and Vite, styled with a single global stylesheet (no CSS modules, no Tailwind).
 
-Currently, two official plugins are available:
+🔗 Live demo: _add your deployed URL here_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech stack
 
-## React Compiler
+- **React 19** + **TypeScript**
+- **Vite** — build tool & dev server
+- Plain **global CSS** (`src/index.css`) — design tokens, layout, and components all in one file
+- No UI framework or component library — everything is hand-built
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting started
 
-## Expanding the Oxlint configuration
+```bash
+# install dependencies
+npm install
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+# start the dev server
+npm run dev
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+# type-check + build for production
+npm run build
+
+# preview the production build locally
+npm run preview
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+The dev server runs at `http://localhost:5173` by default.
+
+## Project structure
+
+```
+src/
+├── components/        # One component per page section
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Skills.tsx
+│   ├── Projects.tsx
+│   ├── Experience.tsx
+│   ├── Certifications.tsx
+│   ├── Contact.tsx
+│   └── Footer.tsx
+├── data/
+│   └── portfolio.ts   # All site content lives here (profile, skills, projects, etc.)
+├── lib/
+│   └── scroll.ts       # Smooth in-page anchor scrolling helper
+├── index.css           # Global stylesheet — design tokens + all component styles
+├── App.tsx             # Composes all sections
+└── main.tsx             # App entry point
+```
+
+## Editing content
+
+Everything you'd want to change day-to-day lives in **`src/data/portfolio.ts`**:
+
+- `profile` — name, role, bio, contact details, social links
+- `values` — the three "what I focus on" cards in About
+- `skillGroups` — skills grouped by category
+- `projects` — featured project cards (add a real `href` once you have project links)
+- `education` / `experience` — timeline entries
+- `certifications` — certification cards
+- `navLinks` — nav bar items
+
+## Styling
+
+All styles live in `src/index.css`, organized top-to-bottom as:
+
+1. **Design tokens** (`:root`) — colors, fonts, spacing scale, shadows
+2. **Reset** — base element resets
+3. **Layout primitives** — `.wrap`, `.section`, `.frame`
+4. Section-by-section component styles (Nav, Hero, About, Skills, Projects, Experience, Certifications, Contact, Footer)
+
+To retheme the site, start by editing the CSS variables at the top of the file.
+
+## Deployment
+
+This is a static Vite app — `npm run build` outputs a `dist/` folder that can be deployed to any static host (Vercel, Netlify, GitHub Pages, Cloudflare Pages, etc.).
+
+## License
+
+© 2026 Khaviso Vukeya. All rights reserved.
