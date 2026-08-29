@@ -8,7 +8,7 @@ function About() {
           <div>
             <span className="eyebrow">About</span>
             <h2 className="section-title">
-              A web developer and data analyst who cares about impactful
+              A Software Developer and Data Analyst who cares about impactful
               solutions.
             </h2>
           </div>

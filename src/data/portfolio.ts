@@ -1,9 +1,9 @@
 export const profile = {
   name: "Khaviso Vukeya",
-  initials: "kv",
+  initials: "K.",
   role: "Data Analyst & Developer",
   location: "South Africa",
-  focus: "Data / Dev / Tech",
+  focus: "Data · Dev · Tech",
   status: "Open to work",
   tagline: "Turning data, design, and technology into meaningful solutions.",
   intro:

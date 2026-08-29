@@ -2,21 +2,6 @@ import { useState } from "react";
 import { navLinks, profile } from "../data/portfolio";
 import { handleAnchorClick } from "../lib/scroll";
 
-function CheckIcon() {
-  return (
-    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-      <circle cx="8" cy="8" r="8" fill="#1e9e5a" />
-      <path
-        d="M5 8.2L7 10.2L11 5.8"
-        stroke="white"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  );
-}
-
 function GithubIcon() {
   return (
     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -40,10 +25,6 @@ function Navbar() {
           {profile.initials}
         </a>
 
-        <span className="nav-status">
-          <CheckIcon />
-          <span>{profile.status.toUpperCase()}</span>
-        </span>
 
         <span className="nav-divider" />
 
@@ -75,8 +56,7 @@ function Navbar() {
             href="#contact"
             onClick={(e) => handleAnchorClick(e, "#contact")}
           >
-            <span className="nav-cta-label">Get in touch</span>
-            <span className="avatar">{profile.initials.toUpperCase()}</span>
+            <span className="nav-cta-label">Get in Touch</span>
           </a>
 
           <button

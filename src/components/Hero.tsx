@@ -40,7 +40,7 @@ function Hero() {
         <p className="hero-intro">{profile.intro}</p>
 
         <p className="hero-meta">
-          {profile.location} · {profile.focus}
+          {profile.location} - {profile.focus}
         </p>
 
         <div className="hero-actions">
@@ -49,15 +49,14 @@ function Hero() {
             className="btn-avatar"
             onClick={(e) => handleAnchorClick(e, "#contact")}
           >
-            Get in touch
-            <span className="avatar">{profile.initials.toUpperCase()}</span>
+            Get in Touch
           </a>
           <a
             href="#projects"
             className="btn btn-ghost"
             onClick={(e) => handleAnchorClick(e, "#projects")}
           >
-            View projects
+            Projects
           </a>
 
           <span className="cursor-tag">
