@@ -1,18 +1,18 @@
 export const profile = {
   name: "Khaviso Vukeya",
-  initials: "K.",
+  initials: "K",
   role: "Data Analyst & Developer",
   location: "South Africa",
   focus: "Data · Dev · Tech",
   status: "Open to work",
-  tagline: "Turning data, design, and technology into meaningful solutions.",
+  tagline: "Designer. Storyteller.",
   intro:
-    "I'm Khaviso Vukeya — I love crafting dynamic websites with clean UI/UX, turning raw data into decisions, and turning ideas into reality.",
+    "I'm Khaviso Vukeya — I turn complicated workflows into products people can use, messy data into clear stories.",
   about:
     "I enjoy building digital experiences and data-driven solutions that are clean, reliable, and designed to solve real-world problems.",
   aboutLong: [
-    "I work with Python, SQL, and Power BI to transform raw data into insights, and HTML, CSS, and JavaScript to craft responsive web applications with clean UI/UX design.",
-    "My background includes IT support — everything from troubleshooting hardware and software issues, to configuring networks, to providing user support across Microsoft 365 environments.",
+    "I'm currently working with React, TypeScript, and JavaScript to craft scalable applications with clean intuitive UI/UX. Skilled in leveraging data with Python, SQL, and Power BI to provide actionable insights.",
+    "My background includes IT support — troubleshooting hardware and software issues, configuring networks, and  providing user support across Microsoft 365 environments.",
   ],
   email: "khavisovukeya3@gmail.com",
   phone: "067 993 3441",
@@ -155,6 +155,19 @@ export type TimelineEntry = {
   place: string;
   points: string[];
 };
+
+export const work: TimelineEntry[] = [
+  {
+    period: "2026 – Present",
+    title: "Software Developer Trainee",
+    place: "mLab CodeTribe Academy (Southern Africa)",
+    points: [
+      "Developed responsive interfaces using React, TypeScript, Responsive CSS, and modern UI/UX practices",
+      "Architected  and deployed responsive, component-based web applications",
+      "Managed API intergrations for real-time data updates and handled complex state logic",
+    ],
+  },
+];
 
 export const education: TimelineEntry[] = [
   {

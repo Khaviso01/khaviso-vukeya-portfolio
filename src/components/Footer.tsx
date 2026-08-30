@@ -8,11 +8,9 @@ function Footer() {
     <footer className="footer">
       <div className="wrap footer-inner">
         <div className="footer-brand">
-          <p className="footer-mark">{profile.initials}</p>
+          <p className="mark">{profile.initials}</p>
           <p className="footer-tagline">
-            Data analyst and front-end developer building clean, responsive,
-            and user-focused digital experiences. Currently open to junior
-            opportunities and collaborations.
+            Clearer product experiences, without sanding off the personality.
           </p>
         </div>
 

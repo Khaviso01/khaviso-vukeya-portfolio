@@ -18,7 +18,7 @@ function Navbar() {
       <div className="nav-inner">
         <a
           href="#home"
-          className="nav-mark"
+          className="mark"
           aria-label="Home"
           onClick={(e) => handleAnchorClick(e, "#home")}
         >

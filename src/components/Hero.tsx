@@ -16,14 +16,6 @@ function CheckIcon() {
   );
 }
 
-function CursorIcon() {
-  return (
-    <svg width="18" height="18" viewBox="0 0 18 18" fill="currentColor" aria-hidden="true">
-      <path d="M2 1.5 15.5 8 9.4 9.4 8 15.5 2 1.5Z" />
-    </svg>
-  );
-}
-
 function Hero() {
   return (
     <section id="home" className="hero">
@@ -34,7 +26,7 @@ function Hero() {
         </span>
 
         <h1 className="hero-title">
-          Turning data into decisions. Building clean web experiences.
+          {profile.tagline}
         </h1>
 
         <p className="hero-intro">{profile.intro}</p>
@@ -58,11 +50,6 @@ function Hero() {
           >
             Projects
           </a>
-
-          <span className="cursor-tag">
-            <CursorIcon />
-            <span>{profile.name.split(" ")[0]}</span>
-          </span>
         </div>
       </div>
     </section>

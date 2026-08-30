@@ -1,4 +1,4 @@
-import { education, experience, type TimelineEntry } from "../data/portfolio";
+import { work, education, experience, type TimelineEntry } from "../data/portfolio";
 
 function TimelineList({ entries }: { entries: TimelineEntry[] }) {
   return (
@@ -30,6 +30,11 @@ function Experience() {
             <span className="eyebrow">Experience</span>
             <h2 className="section-title">Education and experience.</h2>
           </div>
+        </div>
+
+        <div className="timeline-group">
+          <span className="timeline-group-label">Education</span>
+          <TimelineList entries={work} />
         </div>
 
         <div className="timeline-group">
