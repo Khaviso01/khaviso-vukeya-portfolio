@@ -4,7 +4,7 @@ import { handleAnchorClick } from "../lib/scroll";
 function CheckIcon() {
   return (
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-      <circle cx="8" cy="8" r="8" fill="#1e9e5a" />
+      <circle cx="8" cy="8" r="8" fill="#006ae2" />
       <path
         d="M5 8.2L7 10.2L11 5.8"
         stroke="white"
@@ -22,7 +22,7 @@ function Hero() {
       <div className="hero-inner">
         <span className="pill-status">
           <CheckIcon />
-          OPEN FOR NEW OPPORTUNITIES
+          AVAILABLE FOR NEW OPPORTUNITIES
         </span>
 
         <h1 className="hero-title">
@@ -41,7 +41,7 @@ function Hero() {
             className="btn-avatar"
             onClick={(e) => handleAnchorClick(e, "#contact")}
           >
-            Get in Touch
+            Contact
           </a>
           <a
             href="#projects"
