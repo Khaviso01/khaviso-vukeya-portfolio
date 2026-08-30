@@ -11,7 +11,7 @@ export const profile = {
   about:
     "I enjoy building digital experiences and data-driven solutions that are clean, reliable, and designed to solve real-world problems.",
   aboutLong: [
-    "I'm currently working with React, TypeScript, and JavaScript to craft scalable applications with clean intuitive UI/UX. Skilled in leveraging data with Python, SQL, and Power BI to provide actionable insights.",
+    "I'm currently working with React, TypeScript, and JavaScript to craft scalable applications with clean intuitive UI. Skilled in leveraging data with Python, SQL, and Power BI to provide actionable insights.",
     "My background includes IT support — troubleshooting hardware and software issues, configuring networks, and  providing user support across Microsoft 365 environments.",
   ],
   email: "khavisovukeya3@gmail.com",
