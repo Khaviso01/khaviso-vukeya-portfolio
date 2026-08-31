@@ -513,6 +513,7 @@ button {
 
 .hero-title {
   font-family: var(--font-body);
+  font-style: italic;
   font-weight: 700;
   font-size: clamp(2.3rem, 1.5rem + 3.6vw, 3.75rem);
   line-height: 1.08;
