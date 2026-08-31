@@ -190,8 +190,6 @@ button {
   position: relative;
   min-height: 100vh;
   margin: 0 clamp(100px, 2.4vw, 28px);
-  border-left: 1px dashed var(--line-strong);
-  border-right: 1px dashed var(--line-strong);
 }
 
 @media (max-width: 560px) {
@@ -448,7 +446,6 @@ button {
   overflow: hidden;
   padding: clamp(3rem, 6vw, 5.5rem) var(--space-6);
   text-align: center;
-  background-image: radial-gradient(circle, var(--line-strong) 1px, transparent 0.001px);
   background-size: 22px 22px;
 }
 
