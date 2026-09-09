@@ -28,7 +28,7 @@ function Hero() {
         </span>
 
         <h1 className="hero-title">
-          {profile.tagline}
+          Crafting Intuitive products. <span className="sub-tagline">Decoding data.</span>
         </h1>
 
         <p className="hero-intro">{profile.intro}</p>

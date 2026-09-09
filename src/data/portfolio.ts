@@ -9,11 +9,7 @@ export const profile = {
   intro:
     "I'm Khaviso Vukeya, I turn complicated workflows into products people can use, messy data into clear stories.",
   about:
-    "I enjoy building digital experiences and data-driven solutions that are clean, reliable, and designed to solve real-world problems.",
-  aboutLong: [
-    "I'm currently working with React, TypeScript, and JavaScript to craft scalable applications with clean intuitive UI. Skilled in leveraging data with Python, SQL, and Power BI to provide actionable insights.",
-    "My background includes IT support — troubleshooting hardware and software issues, configuring networks, and  providing user support across Microsoft 365 environments.",
-  ],
+    "I enjoy building digital experiences and solutions that are clean, reliable, and designed to solve real-world problems.",
   email: "khavisovukeya3@gmail.com",
   phone: "067 993 3441",
   github: "@Khaviso01",

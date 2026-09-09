@@ -31,7 +31,6 @@ function Skills() {
                 Python
               </span>
               <span className="skill-tag">
-
                 <img
                   src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/azure-sql-database/default.svg"
                   alt="SQL Database"
@@ -41,11 +40,20 @@ function Skills() {
 
                 SQL
               </span>
+              <span className="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/php/light.svg"
+                  alt="PHP"
+                  width="24"
+                  height="24"
+                />
+                Php
+              </span>
             </div>
           </div>
 
           <div className="skill-card">
-            <p className="skill-card-label">Web-Development</p>
+            <p className="skill-card-label">Software-Development</p>
             <div className="skill-tags">
               <span className="skill-tag">
 
@@ -71,6 +79,15 @@ function Skills() {
               </span>
               <span className="skill-tag">
                 <img
+                  src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/nodejs/default.svg"
+                  alt="Node.js"
+                  width="24"
+                  height="24"
+                />
+                Node.js
+              </span>
+              <span className="skill-tag">
+                <img
                   src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/javascript/default.svg"
                   alt="JavaScript"
                   width="24"
@@ -93,7 +110,7 @@ function Skills() {
                   alt="Css3"
                   width="24"
                   height="24"
-                /> 
+                />
                 CSS
               </span>
             </div>
@@ -104,7 +121,7 @@ function Skills() {
             <div className="skill-tags">
               <span className="skill-tag">
                 <img
-                  src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/mysql/wordmark.svg"
+                  src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/mysql/light.svg"
                   alt="MySQL"
                   width="24"
                   height="24"
@@ -119,6 +136,15 @@ function Skills() {
                   height="24"
                 />
                 PostGreSQL
+              </span>
+              <span className="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/oracle/default.svg"
+                  alt="Oracle"
+                  width="24"
+                  height="24"
+                />
+                OracleSQL
               </span>
             </div>
           </div>
@@ -162,6 +188,16 @@ function Skills() {
                 />
                 Postman
               </span>
+              <span className="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/shadcn-ui/mono.svg"
+                  alt="shadcn/ui"
+                  width="24"
+                  height="24"
+                />
+                chadcn-ui
+              </span>
+
             </div>
           </div>
 
@@ -185,7 +221,6 @@ function Skills() {
                   width="24"
                   height="24"
                 />
-
                 Anaconda
               </span>
               <span className="skill-tag">
