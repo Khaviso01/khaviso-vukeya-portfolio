@@ -7,10 +7,6 @@ function About() {
         <div className="section-head">
           <div>
             <span className="eyebrow">About</span>
-            <h2 className="section-title">
-              A Software Developer and Data Analyst who cares about impactful
-              solutions.
-            </h2>
           </div>
         </div>
 
