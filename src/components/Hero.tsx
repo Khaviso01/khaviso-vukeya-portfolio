@@ -1,5 +1,7 @@
 import { profile } from "../data/portfolio";
 import { handleAnchorClick } from "../lib/scroll";
+import { HugeiconsIcon } from '@hugeicons/react'
+import { ArrowRight01Icon } from '@hugeicons/core-free-icons'
 
 function CheckIcon() {
   return (
@@ -31,17 +33,13 @@ function Hero() {
 
         <p className="hero-intro">{profile.intro}</p>
 
-        <p className="hero-meta">
-          {profile.location} - {profile.focus}
-        </p>
-
         <div className="hero-actions">
           <a
             href="#contact"
             className="btn-avatar"
             onClick={(e) => handleAnchorClick(e, "#contact")}
           >
-            Contact
+            Contact Me
           </a>
           <a
             href="#projects"
@@ -49,6 +47,7 @@ function Hero() {
             onClick={(e) => handleAnchorClick(e, "#projects")}
           >
             Projects
+            <HugeiconsIcon icon={ArrowRight01Icon} />
           </a>
         </div>
       </div>

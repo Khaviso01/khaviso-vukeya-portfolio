@@ -20,6 +20,7 @@
 
   --shadow-sm: 0 1px 2px rgba(22, 24, 29, 0.04);
   --shadow-md: 0 8px 20px rgba(22, 24, 29, 0.1);
+  --shadow-lg: #5c6169 0px 0px 0px 0px, rgba(17, 18, 22, 0.04) 0px 1px 2px 3px;
 
   --font-display: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-body: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -41,6 +42,7 @@
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 18px;
+  --radius-xl: 20px;
 
   color-scheme: light;
 }
@@ -85,7 +87,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  max-width: 20%;
   display: block;
 }
 
@@ -281,10 +283,10 @@ button {
 }
 
 .nav-icon-btn {
-  width: 38px;
-  height: 38px;
+  width: 50px;
+  height: 47px;
   border-radius: 50%;
-  border: 1px solid var(--line-strong);
+  border: 1px dashed var(--line-strong);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -415,7 +417,7 @@ button {
   background: var(--ink);
   color: #fff;
   padding: var(--space-3) var(--space-6);
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   font-size: 0.86rem;
   font-weight: 600;
   white-space: nowrap;
@@ -513,7 +515,6 @@ button {
 
 .hero-title {
   font-family: var(--font-body);
-  font-style: italic;
   font-weight: 700;
   font-size: clamp(2.3rem, 1.5rem + 3.6vw, 3.75rem);
   line-height: 1.08;
@@ -573,6 +574,7 @@ button {
 
 .btn-ghost {
   border-color: var(--line-strong);
+  border-radius: var(--radius-md);
   color: var(--ink);
   background: var(--surface);
 }
@@ -709,6 +711,7 @@ button {
   padding: var(--space-6);
   background: var(--surface);
   transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  box-shadow: var(--shadow-lg);
 }
 
 .skill-card:hover {
@@ -733,17 +736,23 @@ button {
 }
 
 .skill-tag {
+  display: inline-flex;
+  gap: var(--space-2);
   font-size: 0.85rem;
-  padding: var(--space-1) var(--space-3);
-  border-radius: 999px;
+  padding: var(--space-3) var(--space-3);
+  border: 1px dashed  var(--ink-faint);
+  border-radius: var(--radius-md);
   background: var(--tag-bg);
-  color: var(--tag-text);
+  color: var(--ink);
+  font-weight: 600;
   transition: background 0.15s ease, color 0.15s ease;
 }
 
 .skill-tag:hover {
-  background: var(--ink);
-  color: #fff;
+  border-color: var(--ink);
+  color: var(--ink);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
 }
 
 /* 
@@ -975,6 +984,7 @@ button {
   flex-direction: column;
   gap: var(--space-4);
   transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  box-shadow: var(--shadow-lg);
 }
 
 .cert-card:hover {

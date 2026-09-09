@@ -5,9 +5,9 @@ export const profile = {
   location: "South Africa",
   focus: "Data · Dev · Tech",
   status: "Open to work",
-  tagline: "Designer. Storyteller.",
+  tagline: "Crafting Intuitive products. Decoding data.",
   intro:
-    "I'm Khaviso Vukeya — I turn complicated workflows into products people can use, messy data into clear stories.",
+    "I'm Khaviso Vukeya, I turn complicated workflows into products people can use, messy data into clear stories.",
   about:
     "I enjoy building digital experiences and data-driven solutions that are clean, reliable, and designed to solve real-world problems.",
   aboutLong: [
