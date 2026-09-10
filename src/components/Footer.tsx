@@ -16,9 +16,9 @@ function Footer() {
           </p>
           <a
             className="btn-avatar cv-btn"
-            href="../public/Khaviso Vukeya Resume.pdf"
+            href="/Khaviso Vukeya CV.pdf"
             target="_blank"
-            download
+            download="Khaviso Vukeya CV.pdf"
           >
             <span className="cv-btn-content">
               <HugeiconsIcon icon={Download01Icon} />
