@@ -87,7 +87,7 @@ function Projects() {
             className="project-row"
 
           >
-            <span className="project-index">01</span>
+            <span className="project-index">02</span>
 
             <div className="project-heading">
               <span className="project-category">Shopping List App</span>
@@ -133,7 +133,7 @@ function Projects() {
             className="project-row"
 
           >
-            <span className="project-index">02</span>
+            <span className="project-index">03</span>
 
             <div className="project-heading">
               <span className="project-category">Weather Application</span>
@@ -182,7 +182,7 @@ function Projects() {
             className="project-row"
 
           >
-            <span className="project-index">03</span>
+            <span className="project-index">04</span>
 
             <div className="project-heading">
               <span className="project-category">Link Storage App</span>
@@ -231,7 +231,7 @@ function Projects() {
             className="project-row"
 
           >
-            <span className="project-index">04</span>
+            <span className="project-index">05</span>
 
             <div className="project-heading">
               <span className="project-category">Predictive AI</span>
@@ -280,7 +280,7 @@ function Projects() {
             className="project-row"
 
           >
-            <span className="project-index">05</span>
+            <span className="project-index">06</span>
 
             <div className="project-heading">
               <span className="project-category">Business Dashboard</span>
