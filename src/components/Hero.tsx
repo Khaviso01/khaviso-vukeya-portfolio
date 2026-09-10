@@ -28,7 +28,7 @@ function Hero() {
         </span>
 
         <h1 className="hero-title">
-          Crafting Intuitive products from UX to UI systems. <span className="sub-tagline">Software Developer Trainee.</span>
+          Crafting Intuitive products from UX to UI systems. <span className="sub-tagline">Software Developer.</span>
         </h1>
 
         <p className="hero-intro">{profile.intro}</p>
