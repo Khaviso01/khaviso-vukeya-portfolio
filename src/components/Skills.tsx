@@ -158,7 +158,7 @@ function Skills() {
           </div>
 
           <div className="skill-card">
-            <p className="skill-card-label">Tools and Technologies</p>
+            <p className="skill-card-label">Tools & Technologies</p>
             <div className="skill-tags">
               <span className="skill-tag">
                 <img

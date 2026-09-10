@@ -53,8 +53,9 @@ function About() {
           </div>
 
           <div className="about-body">
-            <p>I'm currently working with <span>React</span>, <span>TypeScript</span>, and <span>JavaScript</span> to craft scalable applications with clean intuitive UI. Skilled in leveraging data with Python, SQL, and Power BI to provide actionable insights.</p>
-            <p>My background includes IT support — troubleshooting hardware and software issues, configuring networks, and  providing user support across Microsoft 365 environments.</p>
+            <p>I'm currently working with <span>React</span>, <span>TypeScript</span>, and <span>JavaScript</span> to craft scalable applications with clean intuitive UI.</p>
+            <p>Complementary skills in leveraging data with <span>Python</span>, <span>SQL</span>, and <span>Power BI</span> to provide actionable insights.</p>
+            <p>My background includes IT support, troubleshooting hardware and software issues, configuring networks across Microsoft 365 environments.</p>
           </div>
         </div>
       </div>
