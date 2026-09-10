@@ -853,7 +853,11 @@ button {
 }
 
 .project-earnalytics {
-  color: rgba(106, 152, 250, 0.267);
+  background-color: rgba(106, 152, 250, 0.267);
+}
+
+.project-nextstop {
+
 }
 
 .project-image {

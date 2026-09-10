@@ -2,9 +2,6 @@ export const profile = {
   name: "Khaviso Vukeya",
   initials: "K",
   role: "Data Analyst & Developer",
-  location: "South Africa",
-  focus: "Data · Dev · Tech",
-  status: "Open to work",
   intro:
     "I'm Khaviso Vukeya, I turn user needs into flows that reduce friction and guesswork, so your product just makes sense.",
   about:
@@ -16,60 +13,6 @@ export const profile = {
   linkedin: "khaviso-vukeya",
   linkedinUrl: "https://www.linkedin.com/in/khaviso-vukeya",
 };
-
-export const values = [
-  {
-    title: "Clean development",
-    body: "I focus on writing structured, readable, and maintainable code across projects.",
-  },
-  {
-    title: "Data-driven thinking",
-    body: "I turn data into insights and actionable decisions that drive businesses.",
-  },
-  {
-    title: "Continuous learning",
-    body: "Constantly improving my skills across software development, data science, and analysis.",
-  },
-];
-
-export type SkillGroup = {
-  label: string;
-  items: string[];
-};
-
-export const skillGroups: SkillGroup[] = [
-  { label: "Programming & Querying", items: ["Python", "SQL"] },
-  {
-    label: "Web Development",
-    items: ["HTML5", "CSS3", "JavaScript", "UX/UI Design", "Front-End Logic"],
-  },
-  { label: "Databases", items: ["MySQL", "Oracle SQL", "DBMS"] },
-  {
-    label: "Tools & Technologies",
-    items: ["VS Code", "Git & GitHub", "Power BI", "Tableau", "Excel", "Jupyter"],
-  },
-  {
-    label: "Data Skills",
-    items: [
-      "Data Cleaning",
-      "Machine Learning",
-      "Data Transformation",
-      "DAX",
-      "Dashboard Development",
-      "KPI Reporting",
-    ],
-  },
-  {
-    label: "Other Technical Skills",
-    items: [
-      "IT Support",
-      "Hardware Maintenance",
-      "System Administration",
-      "Configuration Management",
-      "Documentation",
-    ],
-  },
-];
 
 export type Project = {
   index: string;

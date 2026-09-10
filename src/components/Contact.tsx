@@ -39,8 +39,7 @@ function Contact() {
               opportunities.
             </p>
             <p className="contact-body">
-              Feel free to reach out — I'm happy to talk about data,
-              dashboards, or your next web project.
+              Feel free to reach out — I'm happy to talk about projects and build scalable solutions.
             </p>
           </div>
 

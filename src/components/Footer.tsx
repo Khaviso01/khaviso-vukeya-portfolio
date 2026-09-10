@@ -17,10 +17,10 @@ function Footer() {
           {/* Corrected download button */}
           <a 
             className="btn-avatar cv-btn" 
-            href="/Khaviso Vukeya CV.pdf" 
+            href="/Khaviso_Vukeya_Resume.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            download="Khaviso_Vukeya_CV.pdf" 
+            download="Khaviso_Vukeya_Resume.pdf" 
           >
             <span className="cv-btn-content">
               <HugeiconsIcon icon={Download01Icon} />

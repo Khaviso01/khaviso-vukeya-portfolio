@@ -3,6 +3,7 @@ import WeatherApp from "../assets/weather-app-prev.png";
 import LinkVault from "../assets/link-vault-prev.png"
 import Earnalytics from "../assets/earnalytics-previ.png"
 import BusinessKPI from "../assets/business-kpi-prev.png"
+import NextStop from "../assets/next-stop-prev.png"
 
 function ArrowIcon() {
   return (
@@ -28,8 +29,57 @@ function Projects() {
             <h2 className="section-title">My work &amp; featured projects.</h2>
           </div>
           <p className="section-note">
-            Web applications built from real coursework and initiatives and a mix of dashboards, data-cleaning work.
+            Web applications built from projects and initiatives. A mix of data work.
           </p>
+        </div>
+
+        <div className="project-list">
+          <a
+            className="project-row"
+
+          >
+            <span className="project-index">01</span>
+
+            <div className="project-heading">
+              <span className="project-category">Travel Assistant App</span>
+
+              <div className="project-image-wrapper project-nextstop">
+                <img
+                  src={NextStop}
+                  alt="Next Stop"
+                  className="project-image"
+                />
+              </div>
+            </div>
+
+            <div className="project-tags">
+              <span className="project-title">NextStop</span>
+              <p className="project-desc">Trip planning assistant, journey suggestions are that are deterministic from the bundled Limpopo directory, assists Limpopo communters to with promised safety and getting information on how to reach their destinations.</p>
+              <span className="project-tag" >
+                React
+              </span>
+              <span className="project-tag" >
+                TypeScript
+              </span>
+              <span className="project-tag" >
+                OpenStreetMap API
+              </span>
+              <span className="project-tag" >
+                Microsoft Tools
+              </span>
+            </div>
+            <div className="project-meta">
+              <a
+                className="btn-avatar"
+                href="https://next-stop-lilac.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+                <ArrowIcon />
+              </a>
+            </div>
+          </a>
         </div>
 
         <div className="project-list">
