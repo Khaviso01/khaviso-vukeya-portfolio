@@ -1,7 +1,7 @@
 import { navLinks, profile } from "../data/portfolio";
 import { handleAnchorClick } from "../lib/scroll";
-import { HugeiconsIcon } from '@hugeicons/react'
-import { Download01Icon } from '@hugeicons/core-free-icons'
+import { HugeiconsIcon } from "@hugeicons/react";
+import { Download01Icon } from "@hugeicons/core-free-icons";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -14,11 +14,13 @@ function Footer() {
           <p className="footer-tagline">
             Clearer product experiences, without sanding off the personality.
           </p>
-          <a
-            className="btn-avatar cv-btn"
-            href="/Khaviso Vukeya CV.pdf"
-            target="_blank"
-            download="Khaviso Vukeya CV.pdf"
+          {/* Corrected download button */}
+          <a 
+            className="btn-avatar cv-btn" 
+            href="/Khaviso Vukeya CV.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            download="Khaviso_Vukeya_CV.pdf" 
           >
             <span className="cv-btn-content">
               <HugeiconsIcon icon={Download01Icon} />
@@ -31,9 +33,9 @@ function Footer() {
           <div className="footer-col">
             <span className="footer-col-label">Navigate</span>
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
+              <a 
+                key={link.href} 
+                href={link.href} 
                 onClick={(e) => handleAnchorClick(e, link.href)}
               >
                 {link.label}
