@@ -1,4 +1,8 @@
-import { projects } from "../data/portfolio";
+import ShopBuddy from "../assets/shopping-list-ui-prev.png";
+import WeatherApp from "../assets/weather-app-prev.png";
+import LinkVault from "../assets/link-vault-prev.png"
+import Earnalytics from "../assets/earnalytics-previ.png"
+import BusinessKPI from "../assets/business-kpi-prev.png"
 
 function ArrowIcon() {
   return (
@@ -24,47 +28,252 @@ function Projects() {
             <h2 className="section-title">My work &amp; featured projects.</h2>
           </div>
           <p className="section-note">
-            A mix of dashboards, data-cleaning work, and web applications
-            built from real coursework and initiatives.
+            Web applications built from real coursework and initiatives and a mix of dashboards, data-cleaning work.
           </p>
         </div>
 
         <div className="project-list">
-          {projects.map((project) => (
-            <a
-              className="project-row"
-              href={project.href}
-              key={project.index}
-              onClick={(e) => {
-                // Placeholder until real project URLs are added in portfolio.ts
-                if (project.href === "#") e.preventDefault();
-              }}
-            >
-              <span className="project-index">{project.index}</span>
+          <a
+            className="project-row"
 
-              <div className="project-heading">
-                <span className="project-category">{project.category}</span>
-                <span className="project-title">{project.title}</span>
-                <p className="project-desc">{project.description}</p>
-              </div>
+          >
+            <span className="project-index">01</span>
 
-              <div className="project-tags">
-                {project.tags.map((tag) => (
-                  <span className="project-tag" key={tag}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
+            <div className="project-heading">
+              <span className="project-category">Shopping List App</span>
 
-              <div className="project-meta">
-                <span className="project-link">
-                  {project.linkLabel}
-                  <ArrowIcon />
-                </span>
+              <div className="project-image-wrapper project-shopping">
+                <img
+                  src={ShopBuddy}
+                  alt="ShopBuddy"
+                  className="project-image"
+                />
               </div>
-            </a>
-          ))}
+            </div>
+
+            <div className="project-tags">
+              <span className="project-title">ShopBuddy</span>
+              <p className="project-desc">Shopping-list app. It lets users manage a personal shopping list, search and sort their items, pick real product photos from Unsplash, and share their list with others</p>
+              <span className="project-tag" >
+                React
+              </span>
+              <span className="project-tag" >
+                TypeScript
+              </span>
+              <span className="project-tag" >
+                Unsplash API
+              </span>
+            </div>
+            <div className="project-meta">
+              <a
+                className="btn-avatar"
+                href="https://shopping-list-iota-six.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+                <ArrowIcon />
+              </a>
+            </div>
+          </a>
         </div>
+
+        <div className="project-list">
+          <a
+            className="project-row"
+
+          >
+            <span className="project-index">02</span>
+
+            <div className="project-heading">
+              <span className="project-category">Weather Application</span>
+
+              <div className="project-image-wrapper project-weather">
+                <img
+                  src={WeatherApp}
+                  alt="Weather App"
+                  className="project-image"
+                />
+              </div>
+            </div>
+
+            <div className="project-tags">
+              <span className="project-title">Weather App</span>
+              <p className="project-desc">responsive weather app. Gets real-time weather data and multi-day forecasts for multiple locations with a beautiful, intuitive interface.</p>
+              <span className="project-tag" >
+                React
+              </span>
+              <span className="project-tag" >
+                TypeScript
+              </span>
+              <span className="project-tag" >
+                WeatherAPI
+              </span>
+              <span className="project-tag" >
+                lucide icons
+              </span>
+            </div>
+            <div className="project-meta">
+              <a
+                className="btn-avatar"
+                href="https://weather-app-task-4.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+                <ArrowIcon />
+              </a>
+            </div>
+          </a>
+        </div>
+
+        <div className="project-list">
+          <a
+            className="project-row"
+
+          >
+            <span className="project-index">03</span>
+
+            <div className="project-heading">
+              <span className="project-category">Link Storage App</span>
+
+              <div className="project-image-wrapper project-links">
+                <img
+                  src={LinkVault}
+                  alt="Link Vault"
+                  className="project-image"
+                />
+              </div>
+            </div>
+
+            <div className="project-tags">
+              <span className="project-title">LinkVault</span>
+              <p className="project-desc">A personal bookmark manager. It allows you to save, organize, search, and filter your favorite links from a single, clean interface</p>
+              <span className="project-tag" >
+                React
+              </span>
+              <span className="project-tag" >
+                TypeScript
+              </span>
+              <span className="project-tag" >
+                localStorage
+              </span>
+              <span className="project-tag" >
+                Huge Icons
+              </span>
+            </div>
+            <div className="project-meta">
+              <a
+                className="btn-avatar"
+                href="https://vault-links-app.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+                <ArrowIcon />
+              </a>
+            </div>
+          </a>
+        </div>
+
+        <div className="project-list">
+          <a
+            className="project-row"
+
+          >
+            <span className="project-index">04</span>
+
+            <div className="project-heading">
+              <span className="project-category">Predictive AI</span>
+
+              <div className="project-image-wrapper project-earnalytics">
+                <img
+                  src={Earnalytics}
+                  alt="Earnalytics AI"
+                  className="project-image"
+                />
+              </div>
+            </div>
+
+            <div className="project-tags">
+              <span className="project-title">Earnalytics AI</span>
+              <p className="project-desc">Earnlytics is a salary prediction AI designed to support financial planning and equitable compensation.</p>
+              <span className="project-tag" >
+                Python
+              </span>
+              <span className="project-tag" >
+                Pandas
+              </span>
+              <span className="project-tag" >
+                NumPy
+              </span>
+              <span className="project-tag" >
+                Scikit-learn
+              </span>
+            </div>
+            <div className="project-meta">
+              <a
+                className="btn-avatar"
+                href="https://github.com/Mustard-Core/Earnalytics-AI/tree/main"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+                <ArrowIcon />
+              </a>
+            </div>
+          </a>
+        </div>
+
+        <div className="project-list">
+          <a
+            className="project-row"
+
+          >
+            <span className="project-index">05</span>
+
+            <div className="project-heading">
+              <span className="project-category">Business Dashboard</span>
+
+              <div className="project-image-wrapper project-earnalytics">
+                <img
+                  src={BusinessKPI}
+                  alt="Business KPIs"
+                  className="project-image"
+                />
+              </div>
+            </div>
+
+            <div className="project-tags">
+              <span className="project-title">Business KPIs</span>
+              <p className="project-desc">Business KPIs, comparing actual performance(2024 sales) against goals(2023 sales). It tracks sales, orders, customers, and product categories, highlights monthly trends, and identifies top customers and regions to guide strategic decisions.</p>
+              <span className="project-tag" >
+                Power BI
+              </span>
+              <span className="project-tag" >
+                Power Query
+              </span>
+              <span className="project-tag" >
+                Data Cleaning
+              </span>
+              <span className="project-tag" >
+                Dashboard Development
+              </span>
+            </div>
+            <div className="project-meta">
+              <a
+                className="btn-avatar"
+                href="https://www.datascienceportfol.io/khavisovukeya/projects/0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Insights
+                <ArrowIcon />
+              </a>
+            </div>
+          </a>
+        </div>
+
       </div>
     </section>
   );

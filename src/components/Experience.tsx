@@ -34,6 +34,7 @@ function Experience() {
 
         <div className="timeline-group">
           <span className="timeline-group-label">Work</span>
+          <span className="timeline-group-label latest-role">Latest Role</span>
           <TimelineList entries={work} />
         </div>
 

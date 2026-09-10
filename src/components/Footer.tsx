@@ -14,16 +14,17 @@ function Footer() {
           <p className="footer-tagline">
             Clearer product experiences, without sanding off the personality.
           </p>
-           <a
-  className="btn-avatar cv-btn"
-  href="#contact"
-  onClick={(e) => handleAnchorClick(e, "#contact")}
->
-  <span className="cv-btn-content">
-    <HugeiconsIcon icon={Download01Icon} />
-    <span>Download CV</span>
-  </span>
-</a>
+          <a
+            className="btn-avatar cv-btn"
+            href="../public/Khaviso Vukeya Resume.pdf"
+            target="_blank"
+            download
+          >
+            <span className="cv-btn-content">
+              <HugeiconsIcon icon={Download01Icon} />
+              <span>Download CV</span>
+            </span>
+          </a>
         </div>
 
         <div className="footer-cols">

@@ -48,6 +48,14 @@ function Skills() {
                   height="24"
                 />
                 Php
+              </span><span className="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/bash/light.svg"
+                  alt="Bash"
+                  width="24"
+                  height="24"
+                />
+                Bash
               </span>
             </div>
           </div>
@@ -178,6 +186,15 @@ function Skills() {
                   height="24"
                 />
                 Github
+              </span>
+              <span className="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/glincker/thesvg@main/public/icons/figma/default.svg"
+                  alt="Figma"
+                  width="24"
+                  height="24"
+                />
+                Figma
               </span>
               <span className="skill-tag">
                 <img
